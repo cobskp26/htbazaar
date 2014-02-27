@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<style type="text/css">
+    .container {
+        width:300px;
+        clear: both;
+    }
+    .container input {
+        width: 100%;
+        clear: both;
+    }
+
+    </style>
+</head>
+<body bgcolor="pink" link="blue" vlink="red">
+
+<h1 align="center"><b>Registration</b></h1><br>
+<div align="center"><h2>
+<a href="login.html">LOGIN</a><br></h2>
+</div>
+
+<img src="images.jpg" height="300" width="300" alt="Image error" align="right">
+<div class="container">
+<form action="input" method="post" autocomplete="on" id="reg">
+
+<fieldset>
+<legend>New User Registration-</legend>
+User Id*:<input type="text" name="uid" placeholder="User Id" autofocus required><br>
+First Name*:<input type="text" name="fname" placeholder="FirstName" required><br>
+last Name*:<input type="text" name="lname" placeholder="LastName" required><br>
+Password*:<input type="password" name="pswd" placeholder="password" required><br>
+Confirm Password*:<input type="text" name="cpswd" placeholder="ConfirmPassword" required><br>
+
+Email*:<input type="email" name="email" placeholder="Email" required><br>
+Contact No.*:<input type="tel" name="no" placeholder="ConatctNo." required><br>
+Address*:<input type="text" name="add" placeholder="Address" required><br>
+Postal Code*:<input type="text" name="pcode" placeholder="PostalCode" required><br>
+
+City:<select name="city" id="city" required>
+<option>Select</option>
+<option>Ambala</option>
+<option>Ajmer</option>
+<option>Alwar</option>
+<option>Aligarh</option>
+<option>Banaras</option>
+<option>Banglore</option>
+<option>Bikaner</option>
+<option>chandigarh</option>
+<option>chennai</option>
+<option>Delhi</option>
+<option>Faridabad</option>
+<option>Gurgaon</option>
+<option>Goa</option>
+<option>kolkatta</option>
+<option>Ludhaina</option>
+<option>Mandi</option>
+<option>Mumbai</option>
+<option>Nagpur</option>
+<option>Patna</option>
+<option>Raipur</option>
+<option>Zirakhpur</option>
+<option>other</option>
+</select><br>
+
+
+State:<select name="state" id="state" required>
+<option>Select</option>
+<option>Arunachal</option>
+<option>Andhra</option>
+<option>Bihar</option>
+<option>Haryana</option>
+<option>Punjab</option>
+<option>J&K</option>
+<option>Himachal</option>
+<option>Rajasthan</option>
+<option>Uttar Pradesh</option>
+<option>West Bengal</option>
+<option>Sikkim</option>
+<option>Assam</option>
+<option>Karnatka</option>
+<option>TamilNadu</option>
+<option>Kerala</option>
+<option>Gujrat</option>
+<option>Maharastra</option>
+<option>Madhya Pradesh</option>
+<option>Orissa</option>
+<option>Telangana</option>
+<option>Uttrakhand</option>
+<option>other</option>
+</select><br>
+</fieldset>
+</form>
+</div>
+
+
+     <iframe src="http://www.google.com/recaptcha/api/noscript?k=6Lea4O0SAAAAAIb1cxv-X9ivBK-ylBIgT4Bt8iif"
+         height="300" width="500" frameborder="0"></iframe><br>
+     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+     </textarea>
+     <input type="hidden" name="recaptcha_response_field"
+         value="manual_challenge">
+  
+
+<input type="submit" value="Submit" form="reg">
+<input type="reset" value="Reset" form="reg">
+
+</body>
+</html>
